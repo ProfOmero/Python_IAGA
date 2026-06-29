@@ -1,0 +1,5 @@
+Juca Bala; 90.5; 1.77
+Maria do Socorro; 70.3; 1.65
+Lucas das Flores; 80.1; 1.72
+Mario dos Santos; 85.5; 1.8
+Lucia Maria; 55.0; 1.6

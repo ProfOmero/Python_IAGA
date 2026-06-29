@@ -1,0 +1,33 @@
+from os import system
+from time import sleep
+
+def cls():
+    system('cls')
+
+def delay(tmp): # 'tmp' é um tempo em segundos
+    sleep(tmp)
+
+def parada():
+    print("\nPessione [ENTER] \"para\" prosseguir. ", end="")
+    input()
+
+def confirmou(rotulo):
+    op = input(rotulo)
+    if ((op == 'S') or (op == 's')):
+        return(True)
+    else:
+        return(False)
+    
+def cabecalho(titulo, ctPag, totPag, ctReg):
+    if (totPag == 0):
+        cls()
+        print(f"{titulo}\n")
+    else:
+        if (ctPag != 0):
+            parada()
+        cls()
+        ctPag = ctPag + 1
+        print(f"{titulo} Página {ctPag} de {totPag}.\n")
+        ctReg = 0
+    
+    return(ctPag, ctReg)    
